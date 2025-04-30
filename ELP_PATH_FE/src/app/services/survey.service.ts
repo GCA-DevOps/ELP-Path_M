@@ -17,7 +17,7 @@ import { Survey } from '../models/survey.model';
   providedIn: 'root',
 })
 export class surveyService {
-  private url = 'http://192.168.88.40:8080'; 
+  private url = 'http://172.16.0.30:9631'; 
 
   constructor(private http: HttpClient) { }
 

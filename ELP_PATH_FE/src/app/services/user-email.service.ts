@@ -8,7 +8,7 @@ import { HttpServiceService } from './http-service.service';
   providedIn: 'root',
 })
 export class UserEmailService {
-  private apiUrl = 'http://52.15.152.26:5555/';
+  private apiUrl = 'http://172.16.30:9631/';
 
   constructor(private http: HttpClient, private service: HttpServiceService) {}
 

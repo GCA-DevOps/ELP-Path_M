@@ -73,7 +73,6 @@ getNewsData(): Observable<any>{
     return this.http.get<any>(url)
  }
  
-
   postSpotlight(formData:{title: string; content:string ; image: File| null}) {
     // console.log('Form Data:', formData); 
     const headers= new HttpHeaders();

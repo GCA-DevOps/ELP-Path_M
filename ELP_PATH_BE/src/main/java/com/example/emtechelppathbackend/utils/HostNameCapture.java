@@ -31,7 +31,7 @@ public java.lang.String getHost() throws UnknownHostException{
         return "http://localhost";
     } else {
 //        return "http://"+localhost;
-         return "http://"+"52.15.152.26";
+         return "http://"+"172.16.0.30";
     }
 }
 

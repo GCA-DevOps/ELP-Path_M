@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class OtpService {
   // private apiUrl = 'your_backend_api_url';
-  private baseUrl = 'http://52.15.152.26:5555/';
+  private baseUrl = 'http://172.16.0.30:9631/';
 
   constructor(private http: HttpClient) {}
 

@@ -262,7 +262,7 @@ public class EmailServiceImpl implements EmailService {
     public EmailDetails SetResetPasswordRequest(Users user) {
         EmailDetails resetRequest = new EmailDetails();
 
-        String resetLink = "52.15.152.26:4200/new-password/";
+        String resetLink = "172.16.0.30:9630/new-password/";
         String emailContent = "Click the link to reset your password: " + resetLink + user.getPasswordResetToken();
         resetRequest.setRecipient(user.getUserEmail());
         resetRequest.setSubject("Password Reset");

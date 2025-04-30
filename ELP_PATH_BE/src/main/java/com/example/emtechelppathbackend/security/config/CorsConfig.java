@@ -17,7 +17,12 @@ public class CorsConfig {
     @Bean
     public UrlBasedCorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:4200","http://localhost:4200/**", "http://52.15.152.26:5555", "http://52.15.152.26:5566"));
+        configuration.setAllowedOrigins(Arrays.asList(
+            "http://172.16.0.30:4200","http://172.16.0.30:4200/**",
+             "http://172.16.0.30:9630", "http://172.16.0.30:9630/**",
+             "http://197.155.71.138:9630", "http://197.155.71.138:9630/**",
+             "http://localhost:4200", "http://localhost:4200/**",
+              ));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 //        configuration.setAllowedHeaders(Arrays.asList("Access-Control-Allow-Origin: *", "Access-Control-Allow-Credentials: Origin, Content-Type, X-Auth-Token, Authorization, Accept"));
         configuration.setAllowedHeaders(Arrays.asList("X-Requested-With", "Origin", "Content-Type", "Accept", "Authorization")); //deploying

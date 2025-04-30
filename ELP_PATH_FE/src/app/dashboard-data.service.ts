@@ -6,7 +6,8 @@ import { Observable, filter } from 'rxjs';
   providedIn: 'root',
 })
 export class DashboardDataService {
-  private baseUrl = 'http://52.15.152.26:5555/';
+  // private baseUrl = 'http://52.15.152.26:5555/';
+  private baseUrl = 'http://172.16.0.30:9631/';
 
   constructor(private http: HttpClient) {}
 
